@@ -142,7 +142,7 @@ class Parser:
         return "https://gov.fccid.io/" + fcc_id
 
     def __init__(self, response):
-        self.__readme_insert_line = 40 # Where to insert the table
+        self.__readme_insert_line = 50 # Where to insert the table
 
         self.root = ET.fromstring(response)
         rows = []

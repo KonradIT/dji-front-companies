@@ -36,6 +36,16 @@ The first shell company created was Cogito Tech Company Limited, which sold two 
 
 Due to my experience researching (and even helping develop) electronic warfare capabilities and drone detection methods used by Ukrainian armed forces in the russian invasion of Ukraine, I was able to find all of the shell companies and their "not DJI" drones in the FCC. All DJI drones use customized hardware to encode signals and emit packets, OcuSync is DJI's proprietary protocol for communication, and the frequencies used by OcuSync drones are very specific and not found in other hardware. Therefore by querying the FCC database for known DJI OcuSync frequencies that I knew were actively used in the DJI Mavic 3 drone, it's how you find some supposedly not DJI drones.
 
+### Companies involved:
+
+- Anzu Robotics: https://anzurobotics.com
+- Cogito Tech Company Limited: https://cogito-techs.com
+- Skyhigh tech: http://skyhigh-us.com/
+- Talos: https://talosdrones.com/
+- Wavego: https://wavego-us.com/
+- Skyany: http://www.skyanydrone.com/
+- Knowact: http://knowact-robot.com/
+
 ### Drones submitted to the FCC by DJI shell companies:
 
 | applicant_name                       | fcc_id          | grant_date   | fcc_gov_url                          |
