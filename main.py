@@ -21,7 +21,8 @@ frequency_pairs = [
 
 known_dji_entities = [
     "SZ DJI TECHNOLOGY CO., LTD".upper(),
-    "SZ DJI Osmo Technology Co.,Ltd.".upper()
+    "SZ DJI Osmo Technology Co.,Ltd.".upper(),
+    "Skycatch, Inc".upper() # thse guys are ok. https://www.dji.com/newsroom/news/skycatch-and-dji-announce-global-agreement-to-deliver-high-precision-custom-drones-for-komatsu
 ]
 
 class ScrapingExceptionDueToTimeout(Exception):
@@ -142,7 +143,7 @@ class Parser:
         return "https://gov.fccid.io/" + fcc_id
 
     def __init__(self, response):
-        self.__readme_insert_line = 50 # Where to insert the table
+        self.__readme_insert_line = 52 # Where to insert the table
 
         self.root = ET.fromstring(response)
         rows = []

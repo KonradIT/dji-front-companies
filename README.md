@@ -45,6 +45,8 @@ Due to my experience researching (and even helping develop) electronic warfare c
 - Wavego: https://wavego-us.com/
 - Skyany: http://www.skyanydrone.com/
 - Knowact: http://knowact-robot.com/
+- Fikaxo: http://fikaxo.net/
+- Xtra (action cams/osmo pocket): https://store.xtra-us.com/
 
 ### Drones submitted to the FCC by DJI shell companies:
 
@@ -62,5 +64,3 @@ Due to my experience researching (and even helping develop) electronic warfare c
 | Anzu Robotics LLC                    | 2BBYS-RAPTOR    | 2023-12-27   | https://gov.fccid.io/2BBYS-RAPTOR    |
 | COGITO TECH COMPANY LIMITED          | 2BCHV-TQFDUB2   | 2023-10-25   | https://gov.fccid.io/2BCHV-TQFDUB2   |
 | COGITO TECH COMPANY LIMITED          | 2BCHV-GL3323    | 2023-10-25   | https://gov.fccid.io/2BCHV-GL3323    |
-| Skycatch, Inc                        | 2AOLP-SKCSC01   | 2022-06-01   | https://gov.fccid.io/2AOLP-SKCSC01   |
-| Skycatch, Inc                        | 2AOLP-SKCEX201  | 2022-04-29   | https://gov.fccid.io/2AOLP-SKCEX201  |
