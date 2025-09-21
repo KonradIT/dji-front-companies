@@ -50,6 +50,8 @@ Due to my experience researching (and even helping develop) electronic warfare c
 
 | applicant_name                       | fcc_id          | grant_date   | fcc_gov_url                          |
 |:-------------------------------------|:----------------|:-------------|:-------------------------------------|
+| FIKAXO TECHNOLOGY INC                | 2BRQB-FKABZFI   | 2025-09-19   | https://gov.fccid.io/2BRQB-FKABZFI   |
+| FIKAXO TECHNOLOGY INC                | 2BRQB-YZABFI    | 2025-09-19   | https://gov.fccid.io/2BRQB-YZABFI    |
 | WaveGo Tech LLC                      | 2BPFE-RC001     | 2025-07-03   | https://gov.fccid.io/2BPFE-RC001     |
 | WaveGo Tech LLC                      | 2BPFE-DD001     | 2025-07-02   | https://gov.fccid.io/2BPFE-DD001     |
 | SZ Knowact Robot Technology Co., Ltd | 2BMUV-AUDAFV25  | 2025-04-29   | https://gov.fccid.io/2BMUV-AUDAFV25  |
