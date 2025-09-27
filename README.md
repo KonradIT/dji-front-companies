@@ -52,6 +52,8 @@ Due to my experience researching (and even helping develop) electronic warfare c
 
 | applicant_name                       | fcc_id          | grant_date   | fcc_gov_url                          |
 |:-------------------------------------|:----------------|:-------------|:-------------------------------------|
+| Jovistar Inc.                        | 2BRGW-FKAWZJO   | 2025-09-25   | https://gov.fccid.io/2BRGW-FKAWZJO   |
+| Jovistar Inc.                        | 2BRGW-YZAWZJO   | 2025-09-25   | https://gov.fccid.io/2BRGW-YZAWZJO   |
 | FIKAXO TECHNOLOGY INC                | 2BRQB-FKABZFI   | 2025-09-19   | https://gov.fccid.io/2BRQB-FKABZFI   |
 | FIKAXO TECHNOLOGY INC                | 2BRQB-YZABFI    | 2025-09-19   | https://gov.fccid.io/2BRQB-YZABFI    |
 | WaveGo Tech LLC                      | 2BPFE-RC001     | 2025-07-03   | https://gov.fccid.io/2BPFE-RC001     |
