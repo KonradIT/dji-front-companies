@@ -1,5 +1,9 @@
 ## The greatest heist ever pulled
 
+## FCC Scraping operations are currently cancelled due to government shutdown.
+
+>Due to a partial lapse in federal government funding, the FCC has suspended most operations effective 12:00 a.m. EDT on October 1, 2025.
+
 How Chinese is a drone made by a Chinese company, running software developed in China, with chips made in China, with firmware updates hosted on a server controlled by a Chinese company, with Chinese IP, an with a remote controller which uses a mobile application developed by said Chinese company (with heavy anti reverse engineering obfuscation provided by a different... you guessed it... Chinese company!)
 
 ## House of DJI:
