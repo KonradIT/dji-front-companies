@@ -31,6 +31,20 @@ class ScrapingExceptionDueToTimeout(Exception):
 class ScrapingExceptionDueToHTTPError(Exception):
     pass
 
+def handle_government_shutdown(req: requests.Response):
+    redirected = "https://www.fcc.gov/document/impact-potential-lapse-funding-commission-operations-0"
+
+    if req.history:
+        for r in req.history:
+            if r.status_code == 302 and r.headers.get("Location") == redirected:
+                Parser.replace_line("README.md", 1, """
+## FCC Scraping operations are currently cancelled due to government shutdown.
+
+>Due to a partial lapse in federal government funding, the FCC has suspended most operations effective 12:00 a.m. EDT on October 1, 2025.
+
+""", False)
+                sys.exit(0)
+
 # A requests-like session to scrape FCC data.
 class ScrapingSession:
     def __init__(self): 
@@ -65,7 +79,9 @@ class ScrapingSession:
         self.__frequency_key = 0
 
         # Hydrate session, put cookies in place.
-        response  = self.session.get(self.__base_url, headers=self.headers)
+        response = self.session.get(self.__base_url, headers=self.headers)
+        handle_government_shutdown(response)
+        
         self.log.debug(">>> Scraping session initialized.")
         self.log.debug(">>> FCC.gov response status code: " + str(response.status_code))
         self.log.debug(">>> Using frequency pair: " + frequency_pairs[self.__frequency_key].low + " - " + frequency_pairs[self.__frequency_key].high + " MHz")
@@ -173,9 +189,10 @@ class Parser:
         return self.parsed.to_markdown(index=False)
 
     @staticmethod
-    def replace_line(file_name: str, line_num: int, text: str) -> None:
+    def replace_line(file_name: str, line_num: int, text: str, drop_text_after: bool = True) -> None:
         lines = open(file_name, "r").readlines()
-        lines = lines[0:line_num+1]
+        if drop_text_after:
+            lines = lines[0:line_num+1]
         lines[line_num] = text
         with open(file_name, "w") as out:
             out.writelines(lines)
@@ -184,7 +201,8 @@ class Parser:
         Parser.replace_line(
             "README.md",
             self.__readme_insert_line,
-            self.markdown()
+            self.markdown(),
+            True
         )
 
 logging.basicConfig(level=logging.DEBUG)
