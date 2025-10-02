@@ -1,6 +1,6 @@
 ## The greatest heist ever pulled
 
----
+## FCC Scraping operations are currently cancelled due to government shutdown.
 
 How Chinese is a drone made by a Chinese company, running software developed in China, with chips made in China, with firmware updates hosted on a server controlled by a Chinese company, with Chinese IP, an with a remote controller which uses a mobile application developed by said Chinese company (with heavy anti reverse engineering obfuscation provided by a different... you guessed it... Chinese company!)
 
