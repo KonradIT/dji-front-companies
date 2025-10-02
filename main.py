@@ -37,13 +37,12 @@ def handle_government_shutdown(req: requests.Response):
     if req.history:
         for r in req.history:
             if r.status_code == 302 and r.headers.get("Location") == redirected:
-                Parser.replace_line("README.md", 1, """
-## FCC Scraping operations are currently cancelled due to government shutdown.
+                Parser.replace_line("README.md", 2, "## FCC Scraping operations are currently cancelled due to government shutdown.\n", False)
+                logging.warning(">>> Government shutdown detected. Exiting.")
 
->Due to a partial lapse in federal government funding, the FCC has suspended most operations effective 12:00 a.m. EDT on October 1, 2025.
-
-""", False)
                 sys.exit(0)
+
+    Parser.replace_line("README.md", 2, "", False)
 
 # A requests-like session to scrape FCC data.
 class ScrapingSession:
