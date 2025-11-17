@@ -31,19 +31,6 @@ class ScrapingExceptionDueToTimeout(Exception):
 class ScrapingExceptionDueToHTTPError(Exception):
     pass
 
-def handle_government_shutdown(req: requests.Response):
-    redirected = "https://www.fcc.gov/document/impact-potential-lapse-funding-commission-operations-0"
-
-    if req.history:
-        for r in req.history:
-            if r.status_code == 302 and r.headers.get("Location") == redirected:
-                Parser.replace_line("README.md", 2, "## FCC Scraping operations are currently cancelled due to government shutdown.\n", False)
-                logging.warning(">>> Government shutdown detected. Exiting.")
-
-                sys.exit(0)
-
-    Parser.replace_line("README.md", 2, "", False)
-
 # A requests-like session to scrape FCC data.
 class ScrapingSession:
     def __init__(self): 
@@ -79,8 +66,6 @@ class ScrapingSession:
 
         # Hydrate session, put cookies in place.
         response = self.session.get(self.__base_url, headers=self.headers)
-        handle_government_shutdown(response)
-        
         self.log.debug(">>> Scraping session initialized.")
         self.log.debug(">>> FCC.gov response status code: " + str(response.status_code))
         self.log.debug(">>> Using frequency pair: " + frequency_pairs[self.__frequency_key].low + " - " + frequency_pairs[self.__frequency_key].high + " MHz")
@@ -188,10 +173,9 @@ class Parser:
         return self.parsed.to_markdown(index=False)
 
     @staticmethod
-    def replace_line(file_name: str, line_num: int, text: str, drop_text_after: bool = True) -> None:
+    def replace_line(file_name: str, line_num: int, text: str) -> None:
         lines = open(file_name, "r").readlines()
-        if drop_text_after:
-            lines = lines[0:line_num+1]
+        lines = lines[0:line_num+1]
         lines[line_num] = text
         with open(file_name, "w") as out:
             out.writelines(lines)
@@ -200,8 +184,7 @@ class Parser:
         Parser.replace_line(
             "README.md",
             self.__readme_insert_line,
-            self.markdown(),
-            True
+            self.markdown()
         )
 
 logging.basicConfig(level=logging.DEBUG)
