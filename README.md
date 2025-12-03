@@ -52,17 +52,18 @@ Due to my experience researching (and even helping develop) electronic warfare c
 
 | applicant_name                       | fcc_id          | grant_date   | fcc_gov_url                          |
 |:-------------------------------------|:----------------|:-------------|:-------------------------------------|
-| SPATIAL HOVER INC                    | 2BQAI-NRC01     | 2025-09-30   | https://gov.fccid.io/2BQAI-NRC01     |
+| Lyno Dynamics LLC                    | 2BQ98-LD2202508 | 2025-11-28   | https://gov.fccid.io/2BQ98-LD2202508 |
 | SPATIAL HOVER INC                    | 2BQAI-S3T       | 2025-09-30   | https://gov.fccid.io/2BQAI-S3T       |
+| SPATIAL HOVER INC                    | 2BQAI-NRC01     | 2025-09-30   | https://gov.fccid.io/2BQAI-NRC01     |
 | Lyno Dynamics LLC                    | 2BQ98-LD220RC   | 2025-09-29   | https://gov.fccid.io/2BQ98-LD220RC   |
-| Jovistar Inc.                        | 2BRGW-FKAWZJO   | 2025-09-25   | https://gov.fccid.io/2BRGW-FKAWZJO   |
 | Jovistar Inc.                        | 2BRGW-YZAWZJO   | 2025-09-25   | https://gov.fccid.io/2BRGW-YZAWZJO   |
+| Jovistar Inc.                        | 2BRGW-FKAWZJO   | 2025-09-25   | https://gov.fccid.io/2BRGW-FKAWZJO   |
 | FIKAXO TECHNOLOGY INC                | 2BRQB-FKABZFI   | 2025-09-19   | https://gov.fccid.io/2BRQB-FKABZFI   |
 | FIKAXO TECHNOLOGY INC                | 2BRQB-YZABFI    | 2025-09-19   | https://gov.fccid.io/2BRQB-YZABFI    |
 | WaveGo Tech LLC                      | 2BPFE-RC001     | 2025-07-03   | https://gov.fccid.io/2BPFE-RC001     |
 | WaveGo Tech LLC                      | 2BPFE-DD001     | 2025-07-02   | https://gov.fccid.io/2BPFE-DD001     |
-| SZ Knowact Robot Technology Co., Ltd | 2BMUV-ARDCF25   | 2025-04-29   | https://gov.fccid.io/2BMUV-ARDCF25   |
 | SZ Knowact Robot Technology Co., Ltd | 2BMUV-AUDAFV25  | 2025-04-29   | https://gov.fccid.io/2BMUV-AUDAFV25  |
+| SZ Knowact Robot Technology Co., Ltd | 2BMUV-ARDCF25   | 2025-04-29   | https://gov.fccid.io/2BMUV-ARDCF25   |
 | Skyhigh Tech LLC                     | 2BLZI-YKBP22411 | 2025-04-25   | https://gov.fccid.io/2BLZI-YKBP22411 |
 | Skyhigh Tech LLC                     | 2BLZI-T60X2411  | 2025-04-25   | https://gov.fccid.io/2BLZI-T60X2411  |
 | Anzu Robotics LLC                    | 2BBYS-RRC01     | 2023-12-28   | https://gov.fccid.io/2BBYS-RRC01     |

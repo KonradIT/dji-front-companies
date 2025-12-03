@@ -5,6 +5,8 @@ import sys
 from tabulate import tabulate
 import logging
 
+from fake_useragent import UserAgent
+
 # FrequencyPair is a utility class to store a high / low frequency pair belonging to a specific OcuSync 3/4 frequency band.
 # OcuSync uses very specific frequency bands which stick out like a sore thumb on the FCC databases. Nobody other than DJI 
 # and their authorized shell companies make hardware that uses these bands.
@@ -17,6 +19,17 @@ frequency_pairs = [
     # OcuSync 3/4 (Mavic Mini 4, Mavic 3, etc...) 5 GHz high-frequency non-telemetry bands:
     FrequencyPair("5745.5", "5829.5"),
     FrequencyPair("5730.5", "5844.5"),
+
+    # trying to hunt down Skyrover S1 (not OcuSync, rather WiFi Enhanced (Mini 4K types)):
+    
+    # Cogito Specta Mini: VERIFIED:
+    FrequencyPair("2405.5", "2476.5"),
+    FrequencyPair("5728.5", "5846.12"),
+
+    # Testing
+    FrequencyPair("5732.5", "5844.5"),
+    FrequencyPair("5735.5", "5839.5"),
+    FrequencyPair("2410.5", "2472.5")
 ]
 
 known_dji_entities = [
@@ -40,9 +53,11 @@ class ScrapingSession:
 
         self.__base_url = "https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm?calledFromFrame=N"
 
+        self.__ua_generator = UserAgent()
+        
         # Shared headers for all requests.
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0",
+            "User-Agent": self.__ua_generator.random,
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.5",
             # "Accept-Encoding": "gzip, deflate, br, zstd",
@@ -69,7 +84,8 @@ class ScrapingSession:
         self.log.debug(">>> Scraping session initialized.")
         self.log.debug(">>> FCC.gov response status code: " + str(response.status_code))
         self.log.debug(">>> Using frequency pair: " + frequency_pairs[self.__frequency_key].low + " - " + frequency_pairs[self.__frequency_key].high + " MHz")
-
+        self.log.debug("Response cookies: " + str(response.cookies))
+        
     # get() returns an XML string.
     def get(self) -> str:
         params = {
