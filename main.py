@@ -82,7 +82,7 @@ class ScrapingSession:
         self.__frequency_key = 0
 
         # Hydrate session, put cookies in place.
-        response = self.session.get(self.__base_url, headers=self.headers, timeout=__caller_timeout)
+        response = self.session.get(self.__base_url, headers=self.headers, timeout=self.__caller_timeout)
         self.log.debug(">>> Scraping session initialized.")
         self.log.debug(">>> FCC.gov response status code: " + str(response.status_code))
         self.log.debug(">>> Using frequency pair: " + frequency_pairs[self.__frequency_key].low + " - " + frequency_pairs[self.__frequency_key].high + " MHz")
