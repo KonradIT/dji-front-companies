@@ -55,7 +55,7 @@ class ScrapingSession:
 
         self.__ua_generator = UserAgent()
 
-        self.__caller_timeout = 10 # 10 seconds
+        self.__caller_timeout = 20 # 10 seconds
         
         # Shared headers for all requests.
         self.headers = {
@@ -81,8 +81,19 @@ class ScrapingSession:
         # Using 0 for now.
         self.__frequency_key = 0
 
+        init_status_code = 0
+        tries = 0 
         # Hydrate session, put cookies in place.
-        response = self.session.get(self.__base_url, headers=self.headers, timeout=self.__caller_timeout)
+        while init_status_code != 200:
+            response = self.session.get(self.__base_url, headers=self.headers, timeout=self.__caller_timeout)
+            init_status_code = response.status_code
+            if init_status_code != 200:
+                self.log.debug(">>> Initialization failed. Retrying...")
+                time.sleep(1)
+                tries += 1
+                if tries > 10:
+                    raise ScrapingExceptionDueToTimeout()
+
         self.log.debug(">>> Scraping session initialized.")
         self.log.debug(">>> FCC.gov response status code: " + str(response.status_code))
         self.log.debug(">>> Using frequency pair: " + frequency_pairs[self.__frequency_key].low + " - " + frequency_pairs[self.__frequency_key].high + " MHz")
@@ -207,7 +218,13 @@ class Parser:
 logging.basicConfig(level=logging.DEBUG)
 
 print("::: scraping session...")
-scraper = ScrapingSession()
+try:
+    scraper = ScrapingSession()
+except ScrapingExceptionDueToTimeout:
+    print("XXX: starting scraping session timed out. Exiting...")
+    sys.exit(1)
+
+
 print("::: attempting to get data from FCC...")
 try:
     data = scraper.get()
