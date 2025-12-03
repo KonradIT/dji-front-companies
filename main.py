@@ -54,6 +54,8 @@ class ScrapingSession:
         self.__base_url = "https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm?calledFromFrame=N"
 
         self.__ua_generator = UserAgent()
+
+        self.__caller_timeout = 10 # 10 seconds
         
         # Shared headers for all requests.
         self.headers = {
@@ -80,7 +82,7 @@ class ScrapingSession:
         self.__frequency_key = 0
 
         # Hydrate session, put cookies in place.
-        response = self.session.get(self.__base_url, headers=self.headers, timeout=10)
+        response = self.session.get(self.__base_url, headers=self.headers, timeout=__caller_timeout)
         self.log.debug(">>> Scraping session initialized.")
         self.log.debug(">>> FCC.gov response status code: " + str(response.status_code))
         self.log.debug(">>> Using frequency pair: " + frequency_pairs[self.__frequency_key].low + " - " + frequency_pairs[self.__frequency_key].high + " MHz")
@@ -141,7 +143,7 @@ class ScrapingSession:
             params=params,
             headers=self.headers,
             data=data,
-            timeout=10
+            timeout=self.__caller_timeout
         )
         try:
             response.raise_for_status()
