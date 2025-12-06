@@ -84,15 +84,26 @@ class ScrapingSession:
         init_status_code = 0
         tries = 0 
         # Hydrate session, put cookies in place.
-        while init_status_code != 200:
-            response = self.session.get(self.__base_url, headers=self.headers, timeout=self.__caller_timeout)
-            init_status_code = response.status_code
-            if init_status_code != 200:
+        while init_status_code != 200 and tries <= 10:
+            try:
+                response = self.session.get(self.__base_url, headers=self.headers, timeout=self.__caller_timeout)
+                init_status_code = response.status_code
+                if init_status_code == 200:
+                    break
+            except (requests.exceptions.Timeout, requests.exceptions.HTTPError) as e:
                 self.log.debug(">>> Initialization failed. Retrying...")
                 time.sleep(1)
                 tries += 1
-                if tries > 10:
-                    raise ScrapingExceptionDueToTimeout()
+            
+            if init_status_code != 200:
+                time.sleep(1)
+                tries += 1
+
+        if init_status_code != 200:
+            if tries > 10:
+                raise ScrapingExceptionDueToTimeout()
+            else:
+                raise ScrapingExceptionDueToHTTPError()
 
         self.log.debug(">>> Scraping session initialized.")
         self.log.debug(">>> FCC.gov response status code: " + str(response.status_code))
