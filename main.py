@@ -91,11 +91,14 @@ class ScrapingSession:
                 init_status_code = response.status_code
                 if init_status_code == 200:
                     break
-                
-                tries += 1
             except (requests.exceptions.Timeout, requests.exceptions.HTTPError) as e:
                 self.log.debug(">>> Initialization failed. Retrying...")
                 time.sleep(1)
+                tries += 1
+            
+            if init_status_code != 200:
+                time.sleep(1)
+                tries += 1
 
         if init_status_code != 200:
             if tries > 10:
