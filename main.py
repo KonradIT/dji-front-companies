@@ -4,6 +4,7 @@ import pandas as pd
 import sys
 from tabulate import tabulate
 import logging
+import time
 
 from fake_useragent import UserAgent
 
