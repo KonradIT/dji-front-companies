@@ -2,6 +2,30 @@
 
 How Chinese is a drone made by a Chinese company, running software developed in China, with chips made in China, with firmware updates hosted on a server controlled by a Chinese company, with Chinese IP, an with a remote controller which uses a mobile application developed by said Chinese company (with heavy anti reverse engineering obfuscation provided by a different... you guessed it... Chinese company!)
 
+## DJI is now banned from certifying new drones in the US.
+
+As per Dec 23, 2025, the FCC has introduced a sweeping ban on foreign-made drones and components. DJI and Autel are defacto banned, and in October 2025 the FCC gave itself the ability to retroactively remove an existing approved certification for a specific device (with some caveats).
+
+This concludes the research on DJI shell companies and DJI's covert attempts to bypass the ban now in place.
+
+## Research paper:
+
+[Read the research paper](./to-catch-a-vibe-paper.pdf)
+
+## Media coverage:
+
+- [DroneXL: Drone Detective Bot Tracks DJI-Linked Companies Through Wireless Frequency Fingerprints](https://dronexl.co/2025/10/29/drone-detective-bot-tracks-dji-linked-companies/)
+- [DroneXL: DJI Shell Game Exposed: Security Bot Catches DJI’s Fikaxo Proxy Before Congressional Deadline](https://dronexl.co/2025/09/26/dji-shell-game-exposed-fikaxo-proxy/)
+- [The Verge: DJI couldn’t confirm or deny it disguised this drone to evade a US ban](https://www.theverge.com/report/714103/dji-skyrover-x1-evade-ban-amazon)
+- [The Verge: Xtra: the company that lets DJI sneak its popular cameras into the US](https://www.theverge.com/report/795016/xtra-muse-dji-osmo-pocket-3-us-customs-tariffs)
+- [VIDEO: Exposing DJI’s Secret Camera Copy](https://youtu.be/oIepODGwyDE?si=bEIRlmbTJh29rNCf)
+- [VIDEO: DJI’s Secret CLONES Are Taking Over — The Hidden Story](https://youtu.be/Xo35_DN9K0o?si=BYVMe5SPXm2rN2NR)
+
+## Impact on policy:
+
+- Senator Rick Scott (R-FL), [letter to the FCC chairman](https://www.rickscott.senate.gov/services/files/C95A5BB2-512D-4FCA-AB32-7419A9968D18)
+- Select Committee on the CCP, [letter to the Secretary of Commerce](https://chinaselectcommittee.house.gov/sites/evo-subsites/selectcommitteeontheccp.house.gov/files/evo-media-document/2024-08-20%20-%20DOC%20Anzu%20%2B%20Cogito%20Letter.pdf)
+
 ## House of DJI:
 
 ![](./house-of-dji.png)
@@ -50,23 +74,23 @@ Due to my experience researching (and even helping develop) electronic warfare c
 
 ### Drones submitted to the FCC by DJI shell companies:
 
-| applicant_name                       | fcc_id          | grant_date   | fcc_gov_url                          |
-|:-------------------------------------|:----------------|:-------------|:-------------------------------------|
-| Lyno Dynamics LLC                    | 2BQ98-LD2202508 | 2025-11-28   | https://gov.fccid.io/2BQ98-LD2202508 |
-| SPATIAL HOVER INC                    | 2BQAI-S3T       | 2025-09-30   | https://gov.fccid.io/2BQAI-S3T       |
-| SPATIAL HOVER INC                    | 2BQAI-NRC01     | 2025-09-30   | https://gov.fccid.io/2BQAI-NRC01     |
-| Lyno Dynamics LLC                    | 2BQ98-LD220RC   | 2025-09-29   | https://gov.fccid.io/2BQ98-LD220RC   |
-| Jovistar Inc.                        | 2BRGW-YZAWZJO   | 2025-09-25   | https://gov.fccid.io/2BRGW-YZAWZJO   |
-| Jovistar Inc.                        | 2BRGW-FKAWZJO   | 2025-09-25   | https://gov.fccid.io/2BRGW-FKAWZJO   |
-| FIKAXO TECHNOLOGY INC                | 2BRQB-FKABZFI   | 2025-09-19   | https://gov.fccid.io/2BRQB-FKABZFI   |
-| FIKAXO TECHNOLOGY INC                | 2BRQB-YZABFI    | 2025-09-19   | https://gov.fccid.io/2BRQB-YZABFI    |
-| WaveGo Tech LLC                      | 2BPFE-RC001     | 2025-07-03   | https://gov.fccid.io/2BPFE-RC001     |
-| WaveGo Tech LLC                      | 2BPFE-DD001     | 2025-07-02   | https://gov.fccid.io/2BPFE-DD001     |
-| SZ Knowact Robot Technology Co., Ltd | 2BMUV-AUDAFV25  | 2025-04-29   | https://gov.fccid.io/2BMUV-AUDAFV25  |
-| SZ Knowact Robot Technology Co., Ltd | 2BMUV-ARDCF25   | 2025-04-29   | https://gov.fccid.io/2BMUV-ARDCF25   |
-| Skyhigh Tech LLC                     | 2BLZI-YKBP22411 | 2025-04-25   | https://gov.fccid.io/2BLZI-YKBP22411 |
-| Skyhigh Tech LLC                     | 2BLZI-T60X2411  | 2025-04-25   | https://gov.fccid.io/2BLZI-T60X2411  |
-| Anzu Robotics LLC                    | 2BBYS-RRC01     | 2023-12-28   | https://gov.fccid.io/2BBYS-RRC01     |
-| Anzu Robotics LLC                    | 2BBYS-RAPTOR    | 2023-12-27   | https://gov.fccid.io/2BBYS-RAPTOR    |
-| COGITO TECH COMPANY LIMITED          | 2BCHV-TQFDUB2   | 2023-10-25   | https://gov.fccid.io/2BCHV-TQFDUB2   |
-| COGITO TECH COMPANY LIMITED          | 2BCHV-GL3323    | 2023-10-25   | https://gov.fccid.io/2BCHV-GL3323    |
+| applicant_name                       | fcc_id          | grant_date   | fcc_gov_url                          | comment   |
+|:-------------------------------------|:----------------|:-------------|:-------------------------------------|:----------|
+| Lyno Dynamics LLC                    | 2BQ98-LD2202508 | 2025-11-28   | https://gov.fccid.io/2BQ98-LD2202508 | Lyno LD220 |
+| SPATIAL HOVER INC                    | 2BQAI-S3T       | 2025-09-30   | https://gov.fccid.io/2BQAI-S3T       | Spatial N Series S3 |
+| SPATIAL HOVER INC                    | 2BQAI-NRC01     | 2025-09-30   | https://gov.fccid.io/2BQAI-NRC01     | Spatial RC          |
+| Lyno Dynamics LLC                    | 2BQ98-LD220RC   | 2025-09-29   | https://gov.fccid.io/2BQ98-LD220RC   | Lyno RC   |
+| Jovistar Inc.                        | 2BRGW-YZAWZJO   | 2025-09-25   | https://gov.fccid.io/2BRGW-YZAWZJO   | UNKNOWN   |
+| Jovistar Inc.                        | 2BRGW-FKAWZJO   | 2025-09-25   | https://gov.fccid.io/2BRGW-FKAWZJO   | UNKNOWN   |
+| FIKAXO TECHNOLOGY INC                | 2BRQB-FKABZFI   | 2025-09-19   | https://gov.fccid.io/2BRQB-FKABZFI   | UNKNOWN   |
+| FIKAXO TECHNOLOGY INC                | 2BRQB-YZABFI    | 2025-09-19   | https://gov.fccid.io/2BRQB-YZABFI    | UNKNOWN   |
+| WaveGo Tech LLC                      | 2BPFE-RC001     | 2025-07-03   | https://gov.fccid.io/2BPFE-RC001     | Skyrover S1 RC |
+| WaveGo Tech LLC                      | 2BPFE-DD001     | 2025-07-02   | https://gov.fccid.io/2BPFE-DD001     | Skyrover S1 |
+| SZ Knowact Robot Technology Co., Ltd | 2BMUV-AUDAFV25  | 2025-04-29   | https://gov.fccid.io/2BMUV-AUDAFV25  | Skyrover X1 |
+| SZ Knowact Robot Technology Co., Ltd | 2BMUV-ARDCF25   | 2025-04-29   | https://gov.fccid.io/2BMUV-ARDCF25   | Skyrover X1 RC |
+| Skyhigh Tech LLC                     | 2BLZI-YKBP22411 | 2025-04-25   | https://gov.fccid.io/2BLZI-YKBP22411 | Talos RC |
+| Skyhigh Tech LLC                     | 2BLZI-T60X2411  | 2025-04-25   | https://gov.fccid.io/2BLZI-T60X2411  | Talos T60X |
+| Anzu Robotics LLC                    | 2BBYS-RRC01     | 2023-12-28   | https://gov.fccid.io/2BBYS-RRC01     | Anzu RC   |
+| Anzu Robotics LLC                    | 2BBYS-RAPTOR    | 2023-12-27   | https://gov.fccid.io/2BBYS-RAPTOR    | Anzu Raptor |
+| COGITO TECH COMPANY LIMITED          | 2BCHV-TQFDUB2   | 2023-10-25   | https://gov.fccid.io/2BCHV-TQFDUB2   | Specta Air |
+| COGITO TECH COMPANY LIMITED          | 2BCHV-GL3323    | 2023-10-25   | https://gov.fccid.io/2BCHV-GL3323    | Specta RC |
