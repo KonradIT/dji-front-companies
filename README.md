@@ -70,12 +70,15 @@ Due to my experience researching (and even helping develop) electronic warfare c
 - Skyany: http://www.skyanydrone.com/
 - Knowact: http://knowact-robot.com/
 - Fikaxo: http://fikaxo.net/
+- VooMax: https://voomaxtech.com/
 - Xtra (action cams/osmo pocket): https://store.xtra-us.com/
 
 ### Drones submitted to the FCC by DJI shell companies:
 
 | applicant_name                       | fcc_id          | grant_date   | fcc_gov_url                          | comment   |
 |:-------------------------------------|:----------------|:-------------|:-------------------------------------|:----------|
+| VOOMAX TECHNOLOGY LIMITED            | 2BRY8-FMAWZVM   | 2025-12-02   | https://gov.fccid.io/2BRY8-FMAWZVM   | VooMax Breeze (DJI Lito X1) |
+| VOOMAX TECHNOLOGY LIMITED            | 2BRY8-YMAWZVM   | 2025-12-02   | https://gov.fccid.io/2BRY8-YMAWZVM   | VooMax Breeze RC |
 | Lyno Dynamics LLC                    | 2BQ98-LD2202508 | 2025-11-28   | https://gov.fccid.io/2BQ98-LD2202508 | Lyno LD220 |
 | SPATIAL HOVER INC                    | 2BQAI-S3T       | 2025-09-30   | https://gov.fccid.io/2BQAI-S3T       | Spatial N Series S3 |
 | SPATIAL HOVER INC                    | 2BQAI-NRC01     | 2025-09-30   | https://gov.fccid.io/2BQAI-NRC01     | Spatial RC          |
@@ -90,7 +93,15 @@ Due to my experience researching (and even helping develop) electronic warfare c
 | SZ Knowact Robot Technology Co., Ltd | 2BMUV-ARDCF25   | 2025-04-29   | https://gov.fccid.io/2BMUV-ARDCF25   | Skyrover X1 RC |
 | Skyhigh Tech LLC                     | 2BLZI-YKBP22411 | 2025-04-25   | https://gov.fccid.io/2BLZI-YKBP22411 | Talos RC |
 | Skyhigh Tech LLC                     | 2BLZI-T60X2411  | 2025-04-25   | https://gov.fccid.io/2BLZI-T60X2411  | Talos T60X |
+| COGITO TECH COMPANY LIMITED          | 2BCHV-TQFDUB1   | 2024-02-23   | https://gov.fccid.io/2BCHV-TQFDUB1   | Specta Mini |
+| COGITO TECH COMPANY LIMITED          | 2BCHV-GL3223    | 2024-02-23   | https://gov.fccid.io/2BCHV-GL3223    | Specta Mini RC |
 | Anzu Robotics LLC                    | 2BBYS-RRC01     | 2023-12-28   | https://gov.fccid.io/2BBYS-RRC01     | Anzu RC   |
 | Anzu Robotics LLC                    | 2BBYS-RAPTOR    | 2023-12-27   | https://gov.fccid.io/2BBYS-RAPTOR    | Anzu Raptor |
 | COGITO TECH COMPANY LIMITED          | 2BCHV-TQFDUB2   | 2023-10-25   | https://gov.fccid.io/2BCHV-TQFDUB2   | Specta Air |
 | COGITO TECH COMPANY LIMITED          | 2BCHV-GL3323    | 2023-10-25   | https://gov.fccid.io/2BCHV-GL3323    | Specta RC |
+
+### Misc (non-drone components submitted by DJI shell companies):
+
+| applicant_name                       | fcc_id          | grant_date   | fcc_gov_url                          | comment           |
+|:-------------------------------------|:----------------|:-------------|:-------------------------------------|:------------------|
+| Lyno Dynamics LLC                    | 2BQ98-LD220RD   | 2025-11-28   | https://gov.fccid.io/2BQ98-LD220RD   | Lyno LD220 Radar  |
