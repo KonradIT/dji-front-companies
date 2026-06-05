@@ -63,7 +63,7 @@ frequency_pairs = [
     FrequencyPair("5730.5", "5844.4"),
     FrequencyPair("5745.0", "5825.0"),
     FrequencyPair("5157.0", "5245.0"),
-    # DJI Lito X1 family. IMPORTANT: these .48-decimal bands are a SHELL
+    # DJI Lito X1-like family. IMPORTANT: these .48-decimal bands are a SHELL
     # signature, NOT a DJI-direct one. The Lito X1 has no FCC grant under DJI's
     # own grantee code SS3 -- product_code DGP14 returns nothing, and no SS3
     # filing ever declares a .48 band (DJI's own drones use .0/.5/.4, e.g. the

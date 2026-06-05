@@ -71,7 +71,7 @@ Due to my experience researching (and even helping develop) electronic warfare c
 - Knowact: http://knowact-robot.com/
 - Fikaxo: http://fikaxo.net/
 - VooMax: https://voomaxtech.com/
-- Odyssey Robot LLC (DJI Lito X1 rebrand, same hardware as VooMax)
+- Odyssey Robot LLC: https://galiviewtech.com/
 - Xtra (action cams/osmo pocket): https://store.xtra-us.com/
 
 ### Drones submitted to the FCC by DJI shell companies:
@@ -79,8 +79,8 @@ Due to my experience researching (and even helping develop) electronic warfare c
 | applicant_name                       | fcc_id          | grant_date   | fcc_gov_url                          | comment   |
 |:-------------------------------------|:----------------|:-------------|:-------------------------------------|:----------|
 | Odyssey Robot LLC                    | 2BSYT-YMAWZOD   | 2026-04-20   | https://gov.fccid.io/2BSYT-YMAWZOD   | Odyssey RC |
-| Odyssey Robot LLC                    | 2BSYT-FMAWZOD   | 2026-03-24   | https://gov.fccid.io/2BSYT-FMAWZOD   | Odyssey (DJI Lito X1) |
-| VOOMAX TECHNOLOGY LIMITED            | 2BRY8-FMAWZVM   | 2025-12-02   | https://gov.fccid.io/2BRY8-FMAWZVM   | VooMax Breeze (DJI Lito X1) |
+| Odyssey Robot LLC                    | 2BSYT-FMAWZOD   | 2026-03-24   | https://gov.fccid.io/2BSYT-FMAWZOD   | Odyssey Drone |
+| VOOMAX TECHNOLOGY LIMITED            | 2BRY8-FMAWZVM   | 2025-12-02   | https://gov.fccid.io/2BRY8-FMAWZVM   | VooMax Breeze 8K |
 | VOOMAX TECHNOLOGY LIMITED            | 2BRY8-YMAWZVM   | 2025-12-02   | https://gov.fccid.io/2BRY8-YMAWZVM   | VooMax Breeze RC |
 | Lyno Dynamics LLC                    | 2BQ98-LD2202508 | 2025-11-28   | https://gov.fccid.io/2BQ98-LD2202508 | Lyno LD220 |
 | SPATIAL HOVER INC                    | 2BQAI-S3T       | 2025-09-30   | https://gov.fccid.io/2BQAI-S3T       | Spatial N Series S3 |
