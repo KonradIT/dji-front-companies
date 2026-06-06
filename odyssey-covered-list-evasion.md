@@ -136,10 +136,21 @@ pairs this *California* company with a **702 (Las Vegas) area-code phone**. *(So
 [Industrious — 21 Miller Alley Suite 210](https://www.industriousoffice.com/locations/21-miller-alley-suite-210)
 · [CoworkingCafe pricing for 21 Miller Alley](https://www.coworkingcafe.com/coworking-property/us/ca/pasadena/21-miller-alley/).)*
 
-**Net:** every US role in the "produced in US" declaration is hollow — a coworking
-mailbox (design/manufacture), an e-waste recycler (assembly) — while the device was tested
-in Shenzhen. The declaration, and the "not covered" attestation that rests on it, are
-false in all three legs.
+**The antenna is Chinese-made — and identical to VooMax's supplier.** Odyssey's own
+*Antenna Gain Info* exhibit (id `9162293`) names the antenna **Manufacturer: INPAQ
+TECHNOLOGY (SUZHOU) CO., LTD.**, *Kexing Science Park, Nanshan District, Shenzhen, China*.
+
+Here is the [document for antenna gain info](https://fccid.io/2BSYT-FMAWZOD/Test-Report/Antenna-Gain-Info-9162293)
+
+The antenna is a UAS **critical component** (§2), so a Chinese-made antenna directly
+undercuts "manufactured in California." The **VooMax** drone's Antenna Gain Info
+(`2BRY8-FMAWZVM`, id `8836722`) names the **identical** manufacturer at the same Shenzhen
+address — a shared Chinese supplier corroborating that the two are the same hardware (§5).
+
+**Net:** every US role in the "produced in US" declaration is hollow — a coworking mailbox
+(design/manufacture) and an e-waste recycler (assembly) — while the device was **tested in
+Shenzhen** and even its **antenna is Chinese-made** (INPAQ, Shenzhen). The declaration, and
+the "not covered" attestation that rests on it, are false.
 
 ---
 
@@ -154,6 +165,8 @@ TECHNOLOGY LIMITED) — established from FCC data alone:
   imply the **same OcuSync transceiver/firmware** — not merely a similar drone.
 - **Paired product-code grammar** — `FMAWZOD`/`YMAWZOD` (Odyssey) vs `FMAWZVM`/`YMAWZVM`
   (VooMax): matching drone/RC codes from a common origin.
+- **Same antenna supplier** — both Antenna Gain Info exhibits name the identical Chinese
+  antenna maker, **INPAQ Technology (Suzhou) Co., Ltd.** (Nanshan District, Shenzhen) — see §4.
 - **OcuSync = DJI** — those `.48` widebands are OcuSync, DJI's proprietary drone
   protocol; no non-DJI hardware is known to declare them. DJI's own grantee (SS3) uses
   round/`.5`/`.4` edges (e.g. Mini 5 Pro `5730.5–5844.4`) and **never `.48`**; DJI did
@@ -231,6 +244,8 @@ either to a specific DJI model: Lito X1 (`DGP14`) and Lito 1 (`DGN12`) declare *
 nominal bands (2400–2483 / 5150–5250 / 5725–5850).
 
 VooMax Breeze 8K [is made in China](https://fccid.io/2BRY8-FMAWZVM/Label/ID-Label-and-Location-8836922)
+
+Critically, the labels for both the [Odyssey / Galiview drone](https://fccid.io/2BSYT-FMAWZOD/Label/ID-Label-and-Location-9155307) and [Remote Controller](https://fccid.io/2BSYT-YMAWZOD/Label/ID-Label-and-Location-9224307) lack the "Made in (country)" text.
 
 ---
 
