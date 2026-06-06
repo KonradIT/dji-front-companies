@@ -38,7 +38,7 @@ Certain UAS and UAS Components"), adding to the Covered List:
 
 > *"UAS and UAS critical components produced in a foreign country"*
 
-with **UAS critical components** defined to include *data-transmission devices,
+where **UAS critical components** include — but are not limited to — the following components and any associated software: *data-transmission devices,
 communications systems, flight controllers, ground control stations and UAS
 controllers, navigation systems, sensors and cameras, batteries and battery
 management systems, and motors.*
@@ -46,11 +46,18 @@ management systems, and motors.*
 - The listing is **category-based** — it does **not name DJI** (or any company) for UAS.
 - Under **47 CFR § 2.903** + **§ 1.50002**, the FCC will **not grant** equipment
   authorization to covered equipment.
-- The only lawful path for a foreign-made UAS is a **DoD/DHS** determination that it
+- The only lawful path for a foreign-made UAS is a **DoW/DHS** determination that it
   "does not pose unacceptable risks."
+- **"Produced in a foreign country" turns on *place*, not *nationality*.** Per the FCC's
+  Covered-List FAQ, *"the specific nationality of the entity … producing UAS or UAS critical
+  components is **not relevant**"* — what governs is **where** the device is produced.
+  Applicants must **certify in good faith** that it was not foreign-produced, and the **FCC
+  may act on false certifications**. A US-incorporated filer like Odyssey therefore gains
+  nothing from its US paperwork if the device is built abroad.
 
 Sources: <https://www.fcc.gov/document/fcc-updates-covered-list-add-certain-uas-and-uas-components-0>
 · <https://docs.fcc.gov/public/attachments/DA-25-1086A1.txt>
+· FCC Covered List FAQ: <https://www.fcc.gov/covered-list-faqs-uas-and-uas-critical-components>
 · The Verge, 2025-12-22: <https://www.theverge.com/news/849460/fcc-foreign-drone-ban-dji-congress-deadline>
 
 ---
@@ -170,8 +177,8 @@ TECHNOLOGY LIMITED) — established from FCC data alone:
 - **OcuSync = DJI** — those `.48` widebands are OcuSync, DJI's proprietary drone
   protocol; no non-DJI hardware is known to declare them. DJI's own grantee (SS3) uses
   round/`.5`/`.4` edges (e.g. Mini 5 Pro `5730.5–5844.4`) and **never `.48`**; DJI did
-  file OcuSync drones (Lito X1 `SS3-DGP14`, granted 2025-12-11, and Lito 1 `SS3-DGN12`)
-  under its own name, both later **delisted** (see §6).
+  file OcuSync drones (Lito X1 `SS3-DGP14`, submitted 2025-11-27, and Lito 1 `SS3-DGN12`,
+  submitted 2025-12-11) under its own name, both later **delisted** (see §6).
 
 **Same radio, different airframes — a family of variants, not 1:1 clones.** The shells are
 *not* exact copies of one DJI model; they ride the same OcuSync platform but differ in
@@ -199,17 +206,18 @@ sibling, not a 1:1 copy of any single model.
 
 ## 6. The DJI source filings — and the laundering timeline
 
-DJI filed both Lito models under its own grantee code (SS3) in **December 2025** (Lito X1
-`SS3-DGP14` granted **2025-12-11**). After the Dec 2025 Covered-List action they were
-**delisted from FCC search** — the grant records are now scrubbed (no date or notes
-survive in the grant form), though the exhibits remain reachable by direct
-`application_id` URL:
+DJI filed both Lito models under its own grantee code (SS3) in **late 2025** — Lito X1
+(`SS3-DGP14`) submitted **2025-11-27** and Lito 1 (`SS3-DGN12`) submitted **2025-12-11**
+(per the filing record). After the Dec 2025 Covered-List action both were **delisted from
+FCC search** — the grant forms are now scrubbed (no dates or notes survive there, so these
+are **no longer re-derivable from the live FCC record**), though the exhibits remain
+reachable by direct `application_id` URL:
 
 | | DJI Lito X1 | DJI Lito 1 |
 |---|---|---|
 | FCC ID | `SS3-DGP14` | `SS3-DGN12` |
 | Internal models | DGP14C / DGP14D | DGN12C / DGN12D |
-| Grant date | 2025-12-11 | (pulled; not in public record) |
+| Submission date | 2025-11-27 | 2025-12-11 |
 | FCC search status | **delisted (pulled)** | **delisted (pulled)** |
 | 2.4 GHz | 2400–2483 | 2400–2483 |
 | 5 GHz | 5150–5250, 5725–5850 | 5150–5250, 5725–5850 |
@@ -217,14 +225,18 @@ survive in the grant form), though the exhibits remain reachable by direct
 
 **Timeline**
 
-1. **2025-12-02** — VooMax shell (`2BRY8`) granted — an OcuSync drone (9 days *before*
-   DJI's own filing below).
-2. **2025-12-11** — DJI's own **Lito X1** (`SS3-DGP14`) granted under grantee SS3.
-3. **2025-12-22** — FCC adds foreign-made UAS to the Covered List (DA-25-1086).
-4. **(after)** — DJI's Lito grant is **delisted/pulled** from FCC search.
-5. **2026-03/04** — Odyssey shell (`2BSYT`) granted **post-ban** with the false "not
-   covered" + "produced in US" attestations (§3–4) — entering a market DJI's own
-   (delisted) filing no longer could.
+1. **2025-11-27** — DJI's own **Lito X1** (`SS3-DGP14`) **submitted** to the FCC under grantee SS3.
+2. **2025-12-02** — VooMax shell (`2BRY8`) **granted** — an OcuSync drone.
+3. **2025-12-11** — DJI's own **Lito 1** (`SS3-DGN12`) **submitted** under SS3.
+4. **2025-12-22** — FCC adds foreign-made UAS to the Covered List (DA-25-1086).
+5. **(after)** — DJI's Lito filings are **delisted/pulled** from FCC search.
+6. **2026-03-24 / 04-20** — Odyssey shell (`2BSYT`) **granted post-ban** with the false "not
+   covered" + "produced in US" attestations (§3–4) — entering a market DJI's own (delisted)
+   filings no longer could.
+
+   *(DJI Lito dates are **submission** dates from the filing record; the shells' are **grant**
+   dates from EAS — the delisted DJI filings' grant dates are scrubbed, so cross-type ordering
+   is indicative.)*
 
 **Frequency comparison — and an honest limit.** DJI's Lito and the shells operate in
 the **same nominal bands** (2400–2483, 5150–5250, 5725–5850). The `.48` edges that evade
@@ -293,7 +305,10 @@ Yes — it appears **materially false**. As of 2025-12-22, a foreign-produced UA
 covered equipment. The device is a foreign-made (Shenzhen-tested, Chinese-componented,
 OcuSync) drone built on the same OcuSync radio as the VooMax Breeze. The 2026-01-12 certification
 that it is "not covered" stands on the 2026-02-06 US-manufacture declaration, which the
-company's own Shenzhen test report contradicts.
+company's own Shenzhen test report contradicts. And Odyssey's US incorporation is
+**irrelevant** to coverage: the FCC's test is *place of production*, **not** the producing
+entity's nationality (§2) — so a Shenzhen-built drone is "produced in a foreign country"
+regardless of the filer being a Delaware/California LLC.
 
 (The companion *Entity* attestation is more defensible: the UAS listing names no
 companies, so "Odyssey is not a named entity" is literally true. The shell structure
@@ -307,6 +322,60 @@ appears designed to exploit exactly that gap.)
   (false statements to a federal agency — criminal).
 - The FCC has asserted **retroactive authority to revoke** authorizations for covered
   drones, so these grants are revocable.
+
+**Q: Do the Jan 2026 DoW exemptions rescue it? (No.)**
+On **2026-01-07** the FCC accepted a Department of War determination exempting — until
+**2027-01-01** — two categories: (a) UAS / critical components on the **DCMA Blue UAS
+Cleared List**, and (b) UAS / critical components that are **"domestic end products" under
+the Buy American standard, 48 CFR § 25.101(a)**. Neither reaches this drone:
+- **(a) Blue UAS list — no.** The Blue list is DCMA's curated set of *vetted, NDAA-compliant
+  US/allied* platforms (Anduril, AeroVironment, Parrot ANAFI USA, Freefly, …) whose very
+  purpose is to **exclude** Chinese / DJI hardware. Odyssey / Galiview is not on it and
+  structurally could not be.
+- **(b) Domestic end product — no, on both prongs.** § 25.101(a) requires (1) the article be
+  **manufactured in the US** *and* (2) **>65 %** of component cost be domestic (the 2024–2028
+  threshold; 60 % base, 75 % from 2029). This drone is Chinese-built — Shenzhen-tested, with a
+  Chinese **OcuSync radio** and a Chinese **INPAQ (Shenzhen) antenna** (§4–§5) — so it is not
+  US-manufactured (prong 1 fails) and its domestic component content is ~0 % (prong 2 fails).
+  The COTS exception waives only the 65 % test, **not** the US-manufacture prong, which is
+  still unmet; the critical components fail individually too.
+- **The "foreign components are fine" carve-out doesn't help.** The FCC lets a US-*produced*
+  drone contain foreign components and stay uncovered **only if** it is Blue-listed or
+  Buy-American-compliant — and Buy American **caps** foreign content at **< 35 %** (domestic
+  must exceed 65 %). Odyssey fails on **both** ends: it isn't US-produced (the predicate, §4),
+  and its content is **~100 % foreign** (Chinese radio + antenna), nowhere near the cap.
+
+The **"domestic end product" lane is exactly what the false "produced in US" declaration
+tries to claim** — so the exemption **cannot** rescue the grant; it rests on the false
+declaration alone. (Odyssey did not even pursue the DoW / Blue route — it denied coverage
+outright via the false US-origin claim.)
+
+**Q: Could Odyssey instead get a Conditional Approval? (No — it's a trap.)**
+The DoW/DHS Conditional-Approval route (guidance dated **2026-01-07**) is an *individualized*
+"unacceptable risk" assessment that, by design, makes the applicant disclose — under a
+**corporate-officer certification**, with **permanent debarment for misrepresentation** —
+exactly what the shell exists to hide:
+
+| Conditional-Approval disclosure required | Odyssey's reality |
+|---|---|
+| Complete ownership: parents, subsidiaries, **affiliates**, beneficial owners ≥ 5 % | Would expose the concealed **DJI parent / affiliation** |
+| Board/executives **with nationality**; any foreign-government control/influence | Exposes the real principals behind the Pasadena front (DJI = DoD **1260H** company) |
+| Full **bill of materials + country of origin** of every component | Chinese (OcuSync radio, INPAQ Shenzhen antenna, §4–§5) |
+| **Country of origin of onboard software/firmware** | **OcuSync firmware = DJI IP** — unfakeable |
+| Locations of **manufacturing, final assembly, testing** | China (Shenzhen); the coworking "factory" + recycler "assembler" collapse |
+| **% US-sourced** components; supply-chain concentration by country | ~0 % US / ~100 % China |
+| Existing **US manufacturing**: % made/assembled in US, **US headcount & facilities** | A coworking mailbox + an e-waste recycler — none |
+| Time-bound **US onshoring plan** + 1–5 yr capex + **quarterly reports** to DoW/DHS | A shell with no capacity, capital, or intent |
+
+**The trap:** apply **honestly** and Odyssey self-identifies as a China-built, DJI-derived
+OcuSync drone with zero US manufacturing — the textbook "unacceptable risk" the Covered List
+targets → **denied**, and it hands DoW/DHS the entire shell map. Apply **dishonestly** →
+material misrepresentation to the U.S. Government → **terminated + permanently barred from
+reapplying**, plus fresh § 1001 exposure. The **firmware-origin** and **ownership/affiliate**
+fields are the unfakeable killers — no honest answer avoids DJI, and no dishonest one is
+survivable. The process rewards genuine onshoring + radical transparency: the exact inverse
+of the shell. *(Source: DoW/DHS "Guidance on Submissions for Conditional Approval for UAS …",
+2026-01-07: <https://www.fcc.gov/sites/default/files/UAS-Guidance-Submissions-Conditional-Approvals.pdf>.)*
 
 ---
 
