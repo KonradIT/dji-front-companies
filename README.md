@@ -78,8 +78,8 @@ Due to my experience researching (and even helping develop) electronic warfare c
 
 | applicant_name                       | fcc_id          | grant_date   | fcc_gov_url                          | comment   |
 |:-------------------------------------|:----------------|:-------------|:-------------------------------------|:----------|
-| Odyssey Robot LLC                    | 2BSYT-YMAWZOD   | 2026-04-20   | https://gov.fccid.io/2BSYT-YMAWZOD   | Odyssey RC |
-| Odyssey Robot LLC                    | 2BSYT-FMAWZOD   | 2026-03-24   | https://gov.fccid.io/2BSYT-FMAWZOD   | Odyssey Drone |
+| Odyssey Robot LLC                    | 2BSYT-YMAWZOD   | 2026-04-20   | https://gov.fccid.io/2BSYT-YMAWZOD   | Galiview RC |
+| Odyssey Robot LLC                    | 2BSYT-FMAWZOD   | 2026-03-24   | https://gov.fccid.io/2BSYT-FMAWZOD   | Galiview TBD |
 | VOOMAX TECHNOLOGY LIMITED            | 2BRY8-FMAWZVM   | 2025-12-02   | https://gov.fccid.io/2BRY8-FMAWZVM   | VooMax Breeze 8K |
 | VOOMAX TECHNOLOGY LIMITED            | 2BRY8-YMAWZVM   | 2025-12-02   | https://gov.fccid.io/2BRY8-YMAWZVM   | VooMax Breeze RC |
 | Lyno Dynamics LLC                    | 2BQ98-LD2202508 | 2025-11-28   | https://gov.fccid.io/2BQ98-LD2202508 | Lyno LD220 |
