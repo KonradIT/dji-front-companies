@@ -99,7 +99,6 @@ The same application package contains its **test report**, exhibit id `9153518`
 - **EUT spec table:** *Kind of Equipment: Unmanned Aircraft · Type Designation:
   FMAWZOD · FCC ID: 2BSYT-FMAWZOD · supports Bluetooth, 2.4GHz Wi-Fi, 5.8GHz Wi-Fi,
   2.4GHz Band and 5.8GHz Band · Battery DC 7.3V.*
-- Listed support equipment includes a **Shenzhen-made AC/DC adapter** ("Shenzhen HONOR").
 
 **A drone "designed and manufactured in California" is not shipped to Shenzhen for
 its FCC compliance testing.** This contradiction is self-contained — it needs no
@@ -118,6 +117,14 @@ reads as a US address-of-convenience to prop up the false origin claim. Even if 
 performed final kitting/repackaging, that would not make a Shenzhen-built drone
 "US-manufactured." *(Sources: ScrapMonster, CB Insights, D&B company listings;
 ETak's own LinkedIn.)*
+
+**How unusual is this?** Naming an e-waste recycler as a product's US "assembler" is very uncommon. **ETak Worldwide appears on no other FCC authorization** — the
+fccid.io / fcc.report mirrors full-text-index exhibit PDFs, and ETak surfaces nowhere else
+— and it is not an EMS / contract manufacturer of any kind. Genuine "produced in US"
+declarations name real assemblers: an EMS house (Flex, Jabil, Benchmark, …) or the OEM's
+own US plant — not an ITAD firm whose business is *taking electronics apart*. A new
+OcuSync drone "assembled" by a Texas recycler that has never appeared on another filing
+reads as an attempt to launder Chinese drones as US-manufactured. ETak's web presence is minimal, not only it doesn't appear on the FCC mirrors/FCC.gov website but it also doesn't appear to have clients stating they manufacture their products via ETak.
 
 **The "California design/manufacture" address is a coworking space.** The declaration's
 designer/manufacturer — *Odyssey Robot LLC, 21 Miller Alley, Suite 210, Pasadena, CA* — sits
@@ -157,7 +164,7 @@ TECHNOLOGY LIMITED) — established from FCC data alone:
 *not* exact copies of one DJI model; they ride the same OcuSync platform but differ in
 camera, LiDAR, battery and flight time:
 
-| Drone | Filer | Sensor | Flight | LiDAR |
+| Drone | Filer | Sensor | Reported Flight Time | LiDAR |
 |---|---|---|---|---|
 | DJI Lito 1 (`SS3-DGN12`) | DJI | 1/2″ | ~36 min | No |
 | DJI Lito X1 (`SS3-DGP14`) | DJI | 1/1.3″ | ~36 min | No |
@@ -227,7 +234,7 @@ VooMax Breeze 8K [is made in China](https://fccid.io/2BRY8-FMAWZVM/Label/ID-Labe
 
 ---
 
-## 7. Odyssey = Galiview (USPTO trademark trail)
+## 7. Galiview
 
 **Odyssey Robot LLC** is the registered owner of:
 
