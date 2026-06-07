@@ -150,9 +150,14 @@ TECHNOLOGY (SUZHOU) CO., LTD.**, *Kexing Science Park, Nanshan District, Shenzhe
 Here is the [document for antenna gain info](https://fccid.io/2BSYT-FMAWZOD/Test-Report/Antenna-Gain-Info-9162293)
 
 The antenna is a UAS **critical component** (§2), so a Chinese-made antenna directly
-undercuts "manufactured in California." The **VooMax** drone's Antenna Gain Info
-(`2BRY8-FMAWZVM`, id `8836722`) names the **identical** manufacturer at the same Shenzhen
-address — a shared Chinese supplier corroborating that the two are the same hardware (§5).
+undercuts "manufactured in California." And the **VooMax** drone's Antenna Gain Info
+(`2BRY8-FMAWZVM`, id `8836722`) is the **same antenna on an identical spec sheet** — same
+antenna name ("Aircraft Ant"), Ipex-1 connector, 50 Ω, ≤2 VSWR, ≥50 % efficiency, identical
+2.4/5.8 GHz bands, the same INPAQ (Shenzhen) maker and address, even the **same antenna test
+lab (Satimo SG24)**. Only the headline gains differ slightly (0.9/1.6 vs 1.0/1.5 dBi; tested
+2025-11-16 vs 2025-09-22) — i.e. separate measurement runs of the **same part**. That's the
+same antenna, not merely the same supplier — strong corroboration the two drones are the
+same hardware (§5).
 
 **Net:** every US role in the "produced in US" declaration is hollow — a coworking mailbox
 (design/manufacture) and an e-waste recycler (assembly) — while the device was **tested in
@@ -172,8 +177,10 @@ TECHNOLOGY LIMITED) — established from FCC data alone:
   imply the **same OcuSync transceiver/firmware** — not merely a similar drone.
 - **Paired product-code grammar** — `FMAWZOD`/`YMAWZOD` (Odyssey) vs `FMAWZVM`/`YMAWZVM`
   (VooMax): matching drone/RC codes from a common origin.
-- **Same antenna supplier** — both Antenna Gain Info exhibits name the identical Chinese
-  antenna maker, **INPAQ Technology (Suzhou) Co., Ltd.** (Nanshan District, Shenzhen) — see §4.
+- **Same antenna part** — both Antenna Gain Info exhibits document the **same antenna**
+  ("Aircraft Ant," made by **INPAQ Technology (Suzhou) Co., Ltd.**, Nanshan District, Shenzhen):
+  identical connector (Ipex-1), impedance, VSWR, efficiency, bands and even the same **Satimo
+  SG24** antenna test lab — only per-run gain values differ (§4).
 - **OcuSync = DJI** — those `.48` widebands are OcuSync, DJI's proprietary drone
   protocol; no non-DJI hardware is known to declare them. DJI's own grantee (SS3) uses
   round/`.5`/`.4` edges (e.g. Mini 5 Pro `5730.5–5844.4`) and **never `.48`**; DJI did
@@ -295,6 +302,23 @@ VooMax "Breeze 8K" spec — consistent with Galiview being a multi-model line (P
 TITAN / NOVA); the FCC-filed `2BSYT-FMAWZOD` is one model within it.
 
 Source: USPTO via <https://uspto.report/company/Odyssey-Robot-L-L-C>.
+
+**The website gives the game away — DJI feature names + "OcuSync."** galiviewtech.com's
+product page sells the drone using **DJI's proprietary feature suite**: **ActiveTrack** — a
+*registered DJI trademark* (**USPTO 86914986**, owner **SZ DJI Technology Co., Ltd.**) — plus **QuickShot, FocusTrack, Hyperlapse, MasterShot, Dronie** and
+**Waypoint**, and it even names **OcuSync**, DJI's proprietary radio protocol, outright. A
+genuinely independent manufacturer neither implements DJI's exact feature set nor advertises a
+**DJI-trademarked** feature and DJI's radio by name. This is DJI firmware, described on a
+"not-DJI" storefront.
+
+**The "About" page is incoherent.** It says Galiview was *"founded in 2022,"* is *"based in
+the heart of San Francisco"* with **"Headquarters: San Francisco, CA 94102"** and a **"50+
+Engineers, Designers"** team — yet the only verifiable address is the **Pasadena Industrious
+coworking mailbox** (21 Miller Alley Suite 210, 91103; §4), the footer brands it **"Galiview
+Inc."** (a *second* entity which doesn't even exist — vs *Odyssey Robot LLC* on the FCC filings and trademarks), and the FCC grantee and trademarks only surface in 2025–26. A claimed
+50-engineer San-Francisco drone maker that files from a $99/month mailbox, under a different
+corporate name, selling a drone that runs DJI's trademarked feature set, is not a real
+independent company. *(Sources: galiviewtech.com /product.html and /about.html; USPTO 86914986.)*
 
 ---
 
